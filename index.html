@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ゲーミングシェアハウス大阪三国｜阪急三国駅徒歩4分・個室シェアハウス</title>
-<meta name="description" content="阪急三国駅から徒歩4分、全8室個室のゲーミングシェアハウス。リビングに共用のゲーム機とゲームソフト。家賃35,000円、水道・光熱費・Wi-Fiは共益費12,000円に込み。梅田まで電車8分。男性・女性とも募集しています。">
+<title>ゲーミングシェアハウス大阪三国｜阪急三国駅徒歩2分・個室シェアハウス</title>
+<meta name="description" content="阪急三国駅から徒歩2分、全8室個室のゲーミングシェアハウス。リビングに共用のゲーム機とゲームソフト。家賃33,000円＋共益費12,000円（水道・光熱費・Wi-Fi込み）。梅田まで電車8分。男性・女性とも募集しています。">
 <link rel="canonical" href="https://mikuni.arshe-corp.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mikuni.arshe-corp.com/">
 <meta property="og:title" content="ゲーミングシェアハウス大阪三国">
-<meta property="og:description" content="阪急三国駅から徒歩4分、全8室個室。リビングに共用のゲーム機とゲームソフトがあるシェアハウスです。">
+<meta property="og:description" content="阪急三国駅から徒歩2分、全8室個室。リビングに共用のゲーム機とゲームソフトがあるシェアハウスです。">
 <meta property="og:image" content="https://mikuni.arshe-corp.com/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
 :root{
   --bg:#fffaf4; --bg-2:#fbefe7; --card:#ffffff;
   --ink:#43372f; --ink-soft:#7a6b63; --line:#f0e4db;
-  --rose:#bf4f5c; --rose-soft:#fbe4e2; --sage:#457058; --sage-soft:#e2eee6; --sun-soft:#fdf1d4; --lav-soft:#ece6f6;
+  --rose:#bf4f5c; --rose-soft:#fbe4e2; --sage:#457058; --sage-soft:#e2eee6;
   --shadow:0 10px 30px rgba(120,80,60,.10);
   --radius:22px; --wrap:1040px;
   --round:"Zen Maru Gothic","Noto Sans JP",sans-serif;
@@ -36,16 +36,19 @@ section{padding:72px 0;scroll-margin-top:60px}
 .sec-head h2{font-family:var(--round);font-size:clamp(24px,4.2vw,32px);line-height:1.45;margin:0;font-weight:700}
 .sec-head .en{display:block;font-family:var(--latin);font-weight:700;letter-spacing:.14em;font-size:13px;color:var(--rose);margin-top:4px}
 .sec-head .en::before,.sec-head .en::after{content:"";display:inline-block;width:18px;height:1px;background:currentColor;vertical-align:middle;margin:0 10px}
-h3{font-family:var(--round);font-size:18px;line-height:1.5;margin:0 0 10px;font-weight:700}
+h3{font-family:var(--round);font-size:18px;line-height:1.5;margin:0 0 6px;font-weight:700}
 p{margin:0 0 14px}
 .muted{color:var(--ink-soft);font-size:14px}
 .narrow{max-width:720px;margin-left:auto;margin-right:auto}
+.center{text-align:center}
 .bg-soft{background:var(--bg-2);border-radius:40px;margin:0 8px}
 .card{background:var(--card);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:999px;font-family:var(--round);font-weight:700;text-decoration:none;line-height:1.3;border:2px solid transparent;cursor:pointer;font-size:15px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 28px;border-radius:999px;font-family:var(--round);font-weight:700;text-decoration:none;line-height:1.3;border:2px solid transparent;cursor:pointer;font-size:16px}
 .btn-primary{background:var(--rose);color:#fff;box-shadow:0 8px 20px rgba(191,79,92,.25)}
-.btn-ghost{border-color:var(--rose);color:var(--rose);background:#fff}
+.btn[disabled]{opacity:.6;cursor:default}
 .icon{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.photo{margin:0;border-radius:18px;overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.photo img{width:100%;height:100%;object-fit:cover}
 
 /* header */
 .site-header{position:sticky;top:0;z-index:20;background:rgba(255,250,244,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
@@ -55,7 +58,7 @@ p{margin:0 0 14px}
 .brand b span{display:inline-block;white-space:nowrap}
 .brand small{font-family:var(--latin);font-size:10px;font-weight:700;letter-spacing:.14em;color:var(--sage)}
 @media (max-width:374px){.brand small{display:none}.brand b{font-size:14px}}
-.menu-btn{display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font:inherit;font-size:14px;font-weight:700;color:var(--ink);cursor:pointer}
+.menu-btn{flex:none;white-space:nowrap;display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font:inherit;font-size:14px;font-weight:700;color:var(--ink);cursor:pointer}
 .menu-btn span{display:block;width:16px;height:2px;background:currentColor;position:relative}
 .menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0;width:16px;height:2px;background:currentColor}
 .menu-btn span::before{top:-5px}.menu-btn span::after{top:5px}
@@ -74,101 +77,68 @@ p{margin:0 0 14px}
 }
 
 /* hero */
-.hero{position:relative;overflow:hidden;padding:40px 0 20px}
+.hero{position:relative;overflow:hidden;padding:36px 0 8px}
 .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;z-index:0}
 .hero::before{width:420px;height:420px;background:var(--rose-soft);top:-170px;right:-130px}
 .hero::after{width:300px;height:300px;background:var(--sage-soft);top:200px;left:-150px}
 .hero .wrap{position:relative;z-index:1;text-align:center}
 .hero .kicker{font-family:var(--round);font-weight:700;color:var(--ink-soft);font-size:15px;margin:0}
-.hero h1{font-family:var(--round);font-size:clamp(30px,6vw,48px);line-height:1.4;margin:6px 0 16px;font-weight:900}
-.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px;padding:0;list-style:none}
-.chips li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 14px;font-size:13px;font-weight:700;color:var(--sage)}
-.hero-photo{margin:0 auto;max-width:900px;border-radius:28px;overflow:hidden;border:6px solid #fff;box-shadow:var(--shadow)}
-.hero-photo img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
-.hero-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:640px;margin:-34px auto 0;padding:0 8px;list-style:none;position:relative}
-.hero-facts li{background:var(--card);border-radius:18px;padding:12px 8px;box-shadow:var(--shadow)}
-.hero-facts span{display:block;font-size:12px;color:var(--ink-soft)}
+.hero h1{font-family:var(--round);font-size:clamp(30px,6vw,48px);line-height:1.4;margin:6px 0 20px;font-weight:900}
+.slides{position:relative;margin:0 auto;max-width:900px;aspect-ratio:4/3;border-radius:28px;overflow:hidden;border:6px solid #fff;box-shadow:var(--shadow);background:#fff}
+@media (min-width:640px){.slides{aspect-ratio:16/9}}
+.slide{position:absolute;inset:0;margin:0;opacity:0;transition:opacity 1.2s ease}
+.slide.is-active{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover}
+.dots{display:flex;justify-content:center;gap:10px;margin-top:12px}
+.dots button{width:10px;height:10px;border-radius:50%;border:0;padding:0;background:#e7d7cc;cursor:pointer}
+.dots button[aria-current="true"]{background:var(--rose)}
+.hero-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:640px;margin:18px auto 0;padding:0;list-style:none}
+.hero-facts li{background:var(--card);border-radius:18px;padding:12px 6px;box-shadow:var(--shadow)}
+.hero-facts span{display:block;font-size:12px;color:var(--ink-soft);line-height:1.5}
 .hero-facts b{display:block;font-family:var(--latin);font-size:clamp(18px,4vw,24px);line-height:1.3;color:var(--rose)}
 .hero-facts b small{font-family:"Noto Sans JP",sans-serif;font-size:12px;font-weight:500}
-.hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:24px}
-.photo-date{font-size:12px;color:var(--ink-soft);margin-top:10px}
+.hero-actions{margin-top:24px}
 
 /* concept */
-.concept-block{display:grid;gap:24px;align-items:center;margin-bottom:44px}
-.concept-block:last-child{margin-bottom:0}
-@media (min-width:820px){.concept-block{grid-template-columns:1fr 1fr;gap:40px}.concept-block.rev .concept-photo{order:2}}
-.concept-photo{border-radius:var(--radius);overflow:hidden;border:6px solid #fff;box-shadow:var(--shadow)}
-.concept-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
-.concept-block h3{font-size:20px}
+.concept{display:grid;gap:14px}
+@media (min-width:820px){.concept{grid-template-columns:repeat(3,1fr)}}
+.concept .card p{margin:0;font-size:15px}
 
-/* area */
-.area-grid{display:grid;gap:14px;margin-top:8px}
-@media (min-width:760px){.area-grid{grid-template-columns:repeat(3,1fr)}}
-.area-item{background:var(--card);border-radius:18px;padding:16px 18px;box-shadow:var(--shadow)}
-.area-item b{display:block;font-family:var(--round);font-size:15px;margin-bottom:2px}
-.area-item span{font-size:14px;color:var(--ink-soft)}
-
-/* facility */
-.spec{width:100%;border-collapse:collapse;font-size:15px}
-.spec th,.spec td{padding:11px 6px;border-bottom:1px dashed var(--line);text-align:left;vertical-align:top}
-.spec th{width:34%;font-weight:700;color:var(--ink-soft);font-size:14px;white-space:nowrap}
-.rooms{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+/* rooms */
+.rooms{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 @media (min-width:760px){.rooms{grid-template-columns:repeat(4,1fr)}}
-.room{background:var(--card);border-radius:18px;padding:14px 12px;box-shadow:0 4px 14px rgba(120,80,60,.06);text-align:center}
-.room .no{font-family:var(--latin);font-weight:700;font-size:20px;color:var(--ink)}
-.room .no small{font-size:12px;color:var(--ink-soft);margin-right:2px}
-.room .st{display:inline-block;margin-top:4px;font-size:12px;font-weight:700;border-radius:999px;padding:1px 10px;background:#f3ece6;color:#8f8078}
-.room .size{display:block;font-size:13px;color:var(--ink-soft);margin-top:4px}
+.room{background:var(--card);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);padding:6px}
+.room img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:13px}
+.room div{padding:8px 6px 6px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px}
+.room b{font-family:var(--latin);font-size:18px}
+.room span{font-size:13px;color:var(--ink-soft)}
+.room .st{font-size:12px;font-weight:700;border-radius:999px;padding:0 10px;background:#f3ece6;color:#8f8078}
 .room.open{outline:2px solid var(--rose)}
 .room.open .st{background:var(--rose);color:#fff}
-.amenities{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media (min-width:640px){.amenities{grid-template-columns:repeat(5,1fr)}}
-.amenity{background:var(--card);border-radius:18px;padding:16px 8px;text-align:center;box-shadow:0 4px 14px rgba(120,80,60,.06)}
-.amenity .ic{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;margin:0 auto 8px;background:var(--rose-soft);color:var(--rose)}
+.amenities{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:28px}
+.amenity{text-align:center;font-size:13px;line-height:1.4;font-weight:700}
+.amenity .ic{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;margin:0 auto 6px;background:var(--rose-soft);color:var(--rose)}
 .amenity:nth-child(2n) .ic{background:var(--sage-soft);color:var(--sage)}
-.amenity b{display:block;font-size:14px}
-.amenity span{display:block;font-size:12px;color:var(--ink-soft);line-height:1.5}
-.sub-head{font-family:var(--round);font-size:19px;margin:40px 0 14px;display:flex;align-items:center;gap:10px}
-.sub-head::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--rose)}
+@media (max-width:420px){.amenity{font-size:11px}.amenity .ic{width:44px;height:44px}}
 
 /* gallery */
 .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 @media (min-width:760px){.gallery{grid-template-columns:repeat(4,1fr)}}
-.gallery figure{margin:0;background:var(--card);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);padding:6px 6px 0}
-.gallery img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:13px}
-.gallery figcaption{font-size:13px;padding:8px 6px 10px;line-height:1.5}
-@media (min-width:760px){.gallery .wide{grid-column:span 2}.gallery .wide img{aspect-ratio:14/5}}
-.common-list{display:grid;gap:0 24px;margin-top:22px}
-@media (min-width:760px){.common-list{grid-template-columns:1fr 1fr}}
-.common-list div{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:15px}
-.common-list div span:first-child{flex:none;white-space:nowrap;font-weight:700}
-.common-list div span:last-child{flex:1;min-width:0;text-align:right;color:var(--ink-soft)}
+.gallery figure{margin:0}
+.gallery .photo{aspect-ratio:1/1}
+.gallery figcaption{font-size:13px;text-align:center;padding-top:6px;line-height:1.5}
+.atmos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.atmos .photo{aspect-ratio:4/5}
 
-/* atmosphere */
-.atmos{display:grid;gap:14px}
-@media (min-width:760px){.atmos{grid-template-columns:1fr 1fr}}
-.atmos figure{margin:0;border-radius:var(--radius);overflow:hidden;border:6px solid #fff;box-shadow:var(--shadow)}
-.atmos img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
-
-/* requirements / rules */
-.req-grid{display:grid;gap:16px}
-@media (min-width:760px){.req-grid{grid-template-columns:1fr 1fr}}
-.req-grid ul{margin:0;padding-left:1.2em}
-.rules{display:grid;gap:10px;grid-template-columns:1fr}
-@media (min-width:760px){.rules{grid-template-columns:repeat(3,1fr)}}
-.rule{background:var(--card);padding:14px 18px 14px 40px;border-radius:18px;box-shadow:0 4px 14px rgba(120,80,60,.06);position:relative}
-.rule::before{content:"";position:absolute;left:18px;top:22px;width:10px;height:10px;border-radius:50%;background:var(--sage)}
-.rule b{display:block;font-family:var(--round);font-size:15px}
-.rule span{font-size:14px;color:var(--ink-soft)}
-
-/* cost */
+/* requirements / cost */
+.list{margin:0;padding-left:1.2em}
+.list li{margin-bottom:4px}
 .cost{width:100%;border-collapse:collapse;font-size:15px}
-.cost th,.cost td{padding:13px 6px;border-bottom:1px dashed var(--line);text-align:left;vertical-align:top}
+.cost th,.cost td{padding:12px 6px;border-bottom:1px dashed var(--line);text-align:left;vertical-align:top}
 .cost th{font-weight:700}
-.cost th small,.cost td small{display:block;font-weight:400;color:var(--ink-soft);font-size:12px;line-height:1.6}
-.cost td.amt{text-align:right;font-family:var(--latin);font-weight:700;font-size:20px;white-space:nowrap;color:var(--rose)}
-.cost-example{margin-top:18px;padding:16px 18px 4px;background:var(--sun-soft);border-radius:18px}
-.cost-example .sum{font-family:var(--latin);font-weight:700;font-size:22px;color:var(--rose)}
+.cost th small{display:block;font-weight:400;color:var(--ink-soft);font-size:12px;line-height:1.6}
+.cost td{text-align:right;font-family:var(--latin);font-weight:700;font-size:19px;white-space:nowrap;color:var(--rose)}
+.cost tr:last-child th,.cost tr:last-child td{border-bottom:0}
 
 /* faq */
 .faq details{background:var(--card);border-radius:18px;padding:14px 18px;margin-bottom:10px;box-shadow:0 4px 14px rgba(120,80,60,.06)}
@@ -180,24 +150,24 @@ p{margin:0 0 14px}
 .faq details[open] summary::after{content:"−"}
 .faq details p{margin:10px 0 0;color:var(--ink-soft)}
 
-/* contact */
-.contact-grid{display:grid;gap:12px;margin:0 0 22px}
-@media (min-width:760px){.contact-grid{grid-template-columns:repeat(2,1fr)}}
-.contact-card{display:flex;flex-direction:column;gap:2px;background:var(--card);border-radius:var(--radius);padding:16px 20px;color:var(--ink);text-decoration:none;box-shadow:var(--shadow);border:2px solid transparent}
-.contact-card:hover{border-color:var(--rose)}
-.contact-card b{font-family:var(--round);font-size:17px;color:var(--rose)}
-.contact-card span{font-size:13px;color:var(--ink-soft)}
-.template{width:100%;min-height:236px;border:1px solid var(--line);border-radius:14px;padding:12px 14px;font:inherit;font-size:15px;line-height:1.8;color:var(--ink);background:#fffdfb;resize:vertical}
-.copy-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:10px}
-.copy-msg{font-size:14px;color:var(--sage);font-weight:700}
+/* contact form */
+.form{display:grid;gap:14px}
+@media (min-width:640px){.form{grid-template-columns:1fr 1fr}.form .full{grid-column:1/-1}}
+.field label{display:block;font-weight:700;font-size:14px;margin-bottom:4px}
+.field label em{font-style:normal;font-size:11px;color:#fff;background:var(--rose);border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:1px}
+.field input,.field select,.field textarea{width:100%;border:1px solid #e6d6cb;border-radius:12px;padding:10px 12px;font:inherit;font-size:16px;color:var(--ink);background:#fffdfb}
+.field textarea{min-height:140px;resize:vertical;line-height:1.7}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--rose);outline-offset:1px;border-color:transparent}
+.form-foot{text-align:center}
+.form-msg{margin:12px 0 0;font-weight:700}
+.form-msg.ok{color:var(--sage)}
+.form-msg.ng{color:var(--rose)}
 
 /* access */
-.access-grid{display:grid;gap:20px}
+.access-grid{display:grid;gap:20px;align-items:center}
 @media (min-width:900px){.access-grid{grid-template-columns:1fr 1fr}}
 .map{width:100%;aspect-ratio:4/3;border:6px solid #fff;border-radius:var(--radius);background:#fff;box-shadow:var(--shadow)}
-.station{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px dashed var(--line)}
-.station b{font-family:var(--latin);font-size:22px;color:var(--rose);white-space:nowrap}
-.station b small{font-family:"Noto Sans JP",sans-serif;font-size:13px}
+.station b{font-family:var(--latin);font-size:24px;color:var(--rose)}
 
 footer{background:#4a3d36;color:#e9ddd4;font-size:13px;padding:28px 0;margin-top:72px}
 footer p{margin:0 0 6px}
@@ -226,102 +196,56 @@ footer p{margin:0 0 6px}
   <div class="wrap">
     <p class="kicker">大阪・淀川区のシェアハウス</p>
     <h1>ゲーミングシェアハウス<br>大阪三国</h1>
-    <ul class="chips">
-      <li>阪急三国駅 徒歩4分</li>
-      <li>全8室 個室</li>
-      <li>男性・女性とも募集</li>
-      <li>梅田まで電車8分</li>
-    </ul>
-    <figure class="hero-photo"><img src="img/kitchen-counter.jpg" alt="キッチンカウンターと椅子" width="1400" height="934"></figure>
-    <ul class="hero-facts">
-      <li><span>家賃</span><b>35,000<small>円</small></b></li>
-      <li><span>共益費（光熱費・Wi-Fi込み）</span><b>12,000<small>円</small></b></li>
-      <li><span>空き（2026年9月時点）</span><b>1<small>室</small></b></li>
-    </ul>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#contact">お問い合わせ</a>
-      <a class="btn btn-ghost" href="#facility">部屋と設備を見る</a>
+    <div class="slides" aria-label="家の写真">
+      <figure class="slide is-active"><img src="img/kitchen-counter.jpg" alt="キッチンカウンターと椅子" width="1400" height="934" fetchpriority="high"></figure>
+      <figure class="slide"><img src="img/living.jpg" alt="リビングのテレビとソファ" width="1400" height="1050"></figure>
+      <figure class="slide"><img src="img/kitchen.jpg" alt="キッチンと冷蔵庫、カウンター席" width="1400" height="767"></figure>
     </div>
-    <p class="photo-date">このページの写真は2020年に運営者が撮影したものです。家具の配置は現在と異なる場合があります。</p>
+    <div class="dots" role="group" aria-label="写真の切り替え"></div>
+    <ul class="hero-facts">
+      <li><span>阪急三国駅から</span><b>徒歩2<small>分</small></b></li>
+      <li><span>全8室</span><b>個室</b></li>
+      <li><span>家賃＋共益費</span><b>45,000<small>円</small></b></li>
+    </ul>
+    <div class="hero-actions"><a class="btn btn-primary" href="#contact">お問い合わせ</a></div>
   </div>
 </section>
 
 <section id="concept">
   <div class="wrap">
     <div class="sec-head"><h2>コンセプト</h2><span class="en">CONCEPT</span></div>
-    <div class="concept-block">
-      <figure class="concept-photo"><img src="img/games.jpg" alt="棚にぎっしり並んだゲームソフト" width="1400" height="1050" loading="lazy"></figure>
-      <div>
-        <h3>ゲーム好きが集まる家</h3>
-        <p>リビングに共用のテレビとゲーム機があり、棚にはたくさんのゲームソフトが並んでいます。入居者は自由に使えます。ゲームが好きな人どうしが、同じ家で暮らすシェアハウスです。</p>
-      </div>
-    </div>
-    <div class="concept-block rev">
-      <figure class="concept-photo"><img src="img/living.jpg" alt="リビングのテレビとソファ" width="1400" height="1050" loading="lazy"></figure>
-      <div>
-        <h3>全室個室。過ごし方は自由</h3>
-        <p>全8室すべて個室です。遊びたいときはリビングへ、ひとりになりたいときは自分の部屋へ。参加しないといけない集まりやイベントはなく、一緒に遊ぶかどうかは各自で決められます。</p>
-      </div>
-    </div>
-    <div class="concept-block">
-      <figure class="concept-photo"><img src="img/kitchen.jpg" alt="キッチンと大きな冷蔵庫" width="1400" height="767" loading="lazy"></figure>
-      <div>
-        <h3>安心して、長く住める家に</h3>
-        <p>運営者は、安心して長く住める住まいを目指しています。シェアハウスの住みやすさは、設備だけでなく一緒に住む人で決まると考えているので、良い家を一緒につくっていける方に来てほしいと思っています。</p>
-      </div>
+    <div class="concept">
+      <div class="card"><h3>ゲーム好きが集まる家</h3><p>リビングに共用のテレビとゲーム機があり、棚のゲームソフトは入居者が自由に使えます。</p></div>
+      <div class="card"><h3>全室個室</h3><p>遊びたいときはリビングへ、ひとりの時間は自分の部屋で。参加しないといけない集まりはありません。</p></div>
+      <div class="card"><h3>女性も住めます</h3><p>男性・女性とも募集しています。リビングに防犯カメラがあり、共用部は清掃業者が週1回ほど掃除します。</p></div>
     </div>
   </div>
 </section>
 
 <section id="area" class="bg-soft">
-  <div class="wrap">
+  <div class="wrap narrow">
     <div class="sec-head"><h2>エリア</h2><span class="en">AREA</span></div>
-    <div class="narrow">
-      <p>家があるのは大阪市淀川区の西三国です。最寄りの阪急三国駅から梅田駅までは電車で8分。大阪メトロ御堂筋線の東三国駅や、新幹線が止まる新大阪駅にも歩いて行けます。</p>
-      <p>駅の近くにはスーパー・ドラッグストア・コンビニがそろっていて、ふだんの買い物は歩いて済ませられます。</p>
-    </div>
-    <div class="area-grid">
-      <div class="area-item"><b>コンビニ</b><span>ファミリーマート・セブン-イレブン 徒歩2分／ローソン 徒歩4分</span></div>
-      <div class="area-item"><b>スーパー・ドラッグストア</b><span>フレスコ 徒歩5分／阪急オアシス／ドラッグミック 徒歩3分</span></div>
-      <div class="area-item"><b>そのほか</b><span>三国アルゴ（アミューズメント施設）・ニトリ・家電量販店・スーパー銭湯</span></div>
-    </div>
+    <p>大阪市淀川区の西三国にあります。阪急三国駅まで歩いて2分、三国駅から梅田駅までは電車で8分です。</p>
+    <p style="margin:0">駅のまわりにスーパー（阪急オアシス・フレスコ）やドラッグストア、コンビニがあり、ふだんの買い物は歩いて済ませられます。</p>
   </div>
 </section>
 
 <section id="facility">
   <div class="wrap">
     <div class="sec-head"><h2>建物・設備</h2><span class="en">HOUSE &amp; FACILITY</span></div>
-    <div class="card narrow">
-      <table class="spec">
-        <tr><th>所在地</th><td>大阪市淀川区西三国3丁目</td></tr>
-        <tr><th>最寄駅</th><td>阪急宝塚本線「三国」駅 徒歩4分</td></tr>
-        <tr><th>部屋数</th><td>全8室（すべて個室）</td></tr>
-        <tr><th>建物</th><td>1980年建築・2020年3月リノベーション</td></tr>
-        <tr><th>インターネット</th><td>eo光（有線・Wi-Fi）</td></tr>
-        <tr><th>運営</th><td>合同会社アルシェ</td></tr>
-      </table>
-    </div>
-
-    <h3 class="sub-head">お部屋（2026年9月時点）</h3>
+    <p class="center">全8室、すべて個室です。いま空いているのは101号室です。</p>
     <div class="rooms">
-      <div class="room open"><div class="no"><small>Room</small>101</div><span class="st">空き</span><span class="size">10.5㎡（約6.5畳）</span></div>
-      <div class="room"><div class="no"><small>Room</small>102</div><span class="st">入居中</span></div>
-      <div class="room"><div class="no"><small>Room</small>103</div><span class="st">入居中</span></div>
-      <div class="room"><div class="no"><small>Room</small>104</div><span class="st">入居中</span></div>
-      <div class="room"><div class="no"><small>Room</small>201</div><span class="st">入居中</span></div>
-      <div class="room"><div class="no"><small>Room</small>202</div><span class="st">入居中</span></div>
-      <div class="room"><div class="no"><small>Room</small>203</div><span class="st">入居中</span></div>
-      <div class="room"><div class="no"><small>Room</small>204</div><span class="st">入居中</span></div>
+      <div class="room open"><img src="img/room-101.jpg" alt="101号室。ベッドと机と椅子" width="1400" height="824" loading="lazy"><div><b>Room 101</b><span>10.5㎡（約6.5畳）</span><span class="st">空室</span></div></div>
+      <div class="room"><img src="img/room-103.jpg" alt="103号室" width="1125" height="717" loading="lazy"><div><b>Room 103</b><span class="st">入居中</span></div></div>
+      <div class="room"><img src="img/room-201.jpg" alt="201号室" width="1400" height="863" loading="lazy"><div><b>Room 201</b><span class="st">入居中</span></div></div>
+      <div class="room"><img src="img/room-203.jpg" alt="203号室" width="1400" height="911" loading="lazy"><div><b>Room 203</b><span class="st">入居中</span></div></div>
     </div>
-    <p class="muted" style="margin-top:10px">空き状況は変わることがあります。問い合わせのときに確認してください。</p>
-
-    <h3 class="sub-head">お部屋の設備</h3>
     <div class="amenities">
-      <div class="amenity"><div class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19V7M3 15h18v4M21 15v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="12" r="1.8"/></svg></div><b>ベッド</b><span>マットレス付き</span></div>
-      <div class="amenity"><div class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="7" rx="1.5"/><path d="M6 9.5h12M8 15v2M12 15v4M16 15v2"/></svg></div><b>エアコン</b><span>全室</span></div>
-      <div class="amenity"><div class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h18M5 9v10M19 9v10M14 9v5h5"/></svg></div><b>机</b><span>PCも置けます</span></div>
-      <div class="amenity"><div class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3v8M16 3v8M6 11h12v3H6zM7 14v7M17 14v7"/></svg></div><b>椅子</b><span>&nbsp;</span></div>
-      <div class="amenity"><div class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/></svg></div><b>インターネット</b><span>有線・Wi-Fi</span></div>
+      <div class="amenity"><div class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19V7M3 15h18v4M21 15v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="12" r="1.8"/></svg></div>ベッド</div>
+      <div class="amenity"><div class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="7" rx="1.5"/><path d="M6 9.5h12M8 15v2M12 15v4M16 15v2"/></svg></div>エアコン</div>
+      <div class="amenity"><div class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h18M5 9v10M19 9v10M14 9v5h5"/></svg></div>机</div>
+      <div class="amenity"><div class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3v8M16 3v8M6 11h12v3H6zM7 14v7M17 14v7"/></svg></div>椅子</div>
+      <div class="amenity"><div class="ic"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/></svg></div>Wi-Fi</div>
     </div>
   </div>
 </section>
@@ -330,71 +254,37 @@ footer p{margin:0 0 6px}
   <div class="wrap">
     <div class="sec-head"><h2>共有部分</h2><span class="en">COMMON AREAS</span></div>
     <div class="gallery">
-      <figure class="wide"><img src="img/kitchen-counter.jpg" alt="キッチンカウンターの席" loading="lazy" width="1400" height="934"><figcaption>ごはんを食べるカウンター</figcaption></figure>
-      <figure><img src="img/kitchen.jpg" alt="キッチンと大きな冷蔵庫" loading="lazy" width="1400" height="767"><figcaption>キッチン</figcaption></figure>
-      <figure><img src="img/games.jpg" alt="ゲームソフトが並ぶ棚" loading="lazy" width="1400" height="1050"><figcaption>ゲームソフトの棚</figcaption></figure>
-      <figure class="wide"><img src="img/living.jpg" alt="リビングのテレビとソファ" loading="lazy" width="1400" height="1050"><figcaption>リビング。共用のテレビとゲーム機があります</figcaption></figure>
-      <figure><img src="img/washroom.jpg" alt="洗面台と洗濯機" loading="lazy" width="1050" height="1400"><figcaption>洗面台と洗濯機</figcaption></figure>
-      <figure><img src="img/shower.jpg" alt="シャワールーム" loading="lazy" width="1400" height="1316"><figcaption>シャワールーム（2室）</figcaption></figure>
-      <figure><img src="img/toilet.jpg" alt="ウォシュレット付きのトイレ" loading="lazy" width="1161" height="1400"><figcaption>ウォシュレット付きトイレ</figcaption></figure>
-      <figure><img src="img/retro.jpg" alt="スーパーファミコンのソフト" loading="lazy" width="1400" height="1050"><figcaption>昔のゲームソフト</figcaption></figure>
-      <figure class="wide"><img src="img/garden.jpg" alt="飛び石のある庭" loading="lazy" width="1400" height="759"><figcaption>庭</figcaption></figure>
+      <figure><div class="photo"><img src="img/system-kitchen.jpg" alt="システムキッチン" width="1137" height="1400" loading="lazy"></div><figcaption>キッチン</figcaption></figure>
+      <figure><div class="photo"><img src="img/fridges.jpg" alt="大きな冷蔵庫" width="933" height="1400" loading="lazy"></div><figcaption>冷蔵庫</figcaption></figure>
+      <figure><div class="photo"><img src="img/washroom.jpg" alt="洗面台と洗濯機" width="1050" height="1400" loading="lazy"></div><figcaption>洗面台と洗濯機</figcaption></figure>
+      <figure><div class="photo"><img src="img/washbasin-2f.jpg" alt="2階の洗面台の収納" width="1400" height="770" loading="lazy"></div><figcaption>2階の洗面台</figcaption></figure>
+      <figure><div class="photo"><img src="img/laundry.jpg" alt="洗濯スペース" width="933" height="1400" loading="lazy"></div><figcaption>洗濯スペース</figcaption></figure>
+      <figure><div class="photo"><img src="img/shower.jpg" alt="シャワールーム" width="1400" height="1316" loading="lazy"></div><figcaption>シャワールーム</figcaption></figure>
+      <figure><div class="photo"><img src="img/toilet.jpg" alt="温水洗浄便座付きのトイレ" width="1161" height="1400" loading="lazy"></div><figcaption>トイレ</figcaption></figure>
+      <figure><div class="photo"><img src="img/entrance.jpg" alt="玄関" width="1400" height="723" loading="lazy"></div><figcaption>玄関</figcaption></figure>
     </div>
-    <div class="common-list">
-      <div><span>リビング</span><span>共用テレビ・ゲーム機・ゲームソフト</span></div>
-      <div><span>キッチン</span><span>システムキッチン1</span></div>
-      <div><span>キッチン家電</span><span>冷蔵庫3・電子レンジ1・炊飯器2・ケトル</span></div>
-      <div><span>浴室・シャワー</span><span>浴室1・シャワールーム2</span></div>
-      <div><span>トイレ</span><span>3（ウォシュレット付き2・男性用1）</span></div>
-      <div><span>洗面台</span><span>4</span></div>
-      <div><span>洗濯機・乾燥機</span><span>洗濯機3・電気式乾燥機1</span></div>
-      <div><span>そのほか</span><span>庭・自転車とバイクの置き場・防犯カメラ（リビング）</span></div>
-    </div>
-    <p class="muted" style="margin-top:14px">共用部の設備はどれも無料で使えます。写真は2020年に撮影したもので、その後、相部屋から全室個室に改装し、リビングの家具の配置も変わっています。</p>
   </div>
 </section>
 
 <section id="atmosphere">
-  <div class="wrap">
+  <div class="wrap narrow">
     <div class="sec-head"><h2>雰囲気</h2><span class="en">ATMOSPHERE</span></div>
-    <div class="narrow">
-      <p>ゲームが好きな人が集まる家です。リビングで一緒に遊ぶこともできますし、自分の部屋で静かに過ごすこともできます。参加しないといけない集まりやイベントはありません。</p>
-      <p>募集しているのは40歳くらいまでの男性・女性で、外国籍の方も住めます。ゲームの上手い下手やジャンルは問いません。</p>
-    </div>
+    <p class="center">リビングの棚には、昔のゲームから最近のゲームまで並んでいます。ゲームの上手い下手やジャンルは問いません。</p>
     <div class="atmos">
-      <figure><img src="img/games.jpg" alt="ゲームソフトの棚" loading="lazy" width="1400" height="1050"></figure>
-      <figure><img src="img/retro.jpg" alt="スーパーファミコンのソフト" loading="lazy" width="1400" height="1050"></figure>
+      <div class="photo"><img src="img/game-shelf.jpg" alt="ゲームソフトが並ぶ棚" width="1050" height="1400" loading="lazy"></div>
+      <div class="photo"><img src="img/retro.jpg" alt="スーパーファミコンのソフト" width="1400" height="1050" loading="lazy"></div>
     </div>
   </div>
 </section>
 
 <section id="requirements" class="bg-soft">
-  <div class="wrap">
+  <div class="wrap narrow">
     <div class="sec-head"><h2>入居条件</h2><span class="en">REQUIREMENTS</span></div>
-    <div class="req-grid">
-      <div class="card">
-        <h3>募集している人</h3>
-        <ul>
-          <li>40歳くらいまでの男性・女性</li>
-          <li>外国籍の方も入居できます</li>
-          <li>長く住む方（長期入居が前提です）</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>入居のときに必要なもの</h3>
-        <p style="margin-bottom:6px"><b>日本国籍の方</b><br>身分証明書、緊急連絡先</p>
-        <p style="margin-bottom:0"><b>外国籍の方</b><br>パスポート、日常会話ができる程度の日本語、日本語の読み書き、日本国内の緊急連絡先</p>
-      </div>
-    </div>
-    <h3 class="sub-head">ハウスルール</h3>
-    <div class="rules">
-      <div class="rule"><b>館内は禁煙</b><span>建物の中ではたばこを吸えません。</span></div>
-      <div class="rule"><b>友人の宿泊は事前に連絡</b><span>泊める前に運営者へ連絡してください。</span></div>
-      <div class="rule"><b>共用部にごみ箱はありません</b><span>ごみは各自で管理します。</span></div>
-      <div class="rule"><b>清掃は週1回程度</b><span>共用部を清掃業者が掃除します。</span></div>
-      <div class="rule"><b>運営者の見回り</b><span>週0〜1回程度です。</span></div>
-      <div class="rule"><b>交流は自由</b><span>イベントや参加の決まりはありません。</span></div>
-    </div>
+    <ul class="list">
+      <li>40歳くらいまでの男性・女性（外国籍の方も入居できます）</li>
+      <li>長く住める方</li>
+      <li>建物の中は禁煙です</li>
+    </ul>
   </div>
 </section>
 
@@ -403,18 +293,12 @@ footer p{margin:0 0 6px}
     <div class="sec-head"><h2>入居時の費用</h2><span class="en">COST</span></div>
     <div class="card narrow">
       <table class="cost">
-        <tr><th>家賃<small>毎月（101号室）</small></th><td class="amt">35,000円</td></tr>
-        <tr><th>共益費<small>毎月。水道・光熱費・インターネット込み</small></th><td class="amt">12,000円</td></tr>
-        <tr><th>清掃費<small>毎月</small></th><td class="amt">1,000円</td></tr>
-        <tr><th>保証金<small>入居するときだけ</small></th><td class="amt">30,000円</td></tr>
-        <tr><th>礼金</th><td class="amt">0円</td></tr>
+        <tr><th>家賃<small>毎月（101号室）</small></th><td>33,000円</td></tr>
+        <tr><th>共益費<small>毎月。水道・光熱費・インターネット込み</small></th><td>12,000円</td></tr>
+        <tr><th>清掃費<small>毎月</small></th><td>1,000円</td></tr>
+        <tr><th>保証金<small>入居するときだけ</small></th><td>30,000円</td></tr>
+        <tr><th>礼金</th><td>0円</td></tr>
       </table>
-      <div class="cost-example">
-        <h3>101号室の費用の例</h3>
-        <p>入居するときは、保証金と、家賃・共益費の1か月分がかかります。月の途中に入居する場合、その月の家賃・共益費は日割りです。</p>
-        <p>月の初めに入居する場合　<span class="sum">77,000円</span><br><span class="muted">保証金30,000円＋家賃35,000円＋共益費12,000円</span></p>
-        <p>翌月からは毎月　<span class="sum">48,000円</span><br><span class="muted">家賃35,000円＋共益費12,000円＋清掃費1,000円</span></p>
-      </div>
     </div>
   </div>
 </section>
@@ -422,44 +306,35 @@ footer p{margin:0 0 6px}
 <section id="faq" class="bg-soft">
   <div class="wrap faq narrow">
     <div class="sec-head"><h2>よくある質問</h2><span class="en">FAQ</span></div>
-    <details><summary><span>家賃のほかに毎月かかるお金は？</span></summary><p>共益費12,000円（水道・光熱費・インターネット込み）と清掃費1,000円です。101号室なら家賃と合わせて毎月48,000円です。</p></details>
-    <details><summary><span>短い期間だけ住めますか？</span></summary><p>長く住む方を前提に募集しています。</p></details>
-    <details><summary><span>女性も住めますか？</span></summary><p>男性・女性とも募集しています。浴室・シャワールーム・洋式トイレは男女共用で、ほかに男性用の小便器が1つあります。リビングには防犯カメラがあります。</p></details>
+    <details><summary><span>入居するときにいくらかかりますか？</span></summary><p>保証金30,000円と、家賃・共益費の1か月分45,000円です。月の初めに入居する場合は合計75,000円です。月の途中に入居する場合、その月の家賃・共益費は日割りです。</p></details>
+    <details><summary><span>女性も住めますか？</span></summary><p>住めます。浴室・シャワールーム・洋式トイレは男女共用です。</p></details>
     <details><summary><span>外国籍でも住めますか？</span></summary><p>住めます。パスポートと日本国内の緊急連絡先が必要です。日常会話ができる程度の日本語と、日本語の読み書きができることが条件です。</p></details>
-    <details><summary><span>家具や家電は持っていく必要がありますか？</span></summary><p>部屋にベッド・マットレス・エアコン・机・椅子があり、共用部に冷蔵庫・電子レンジ・炊飯器・ケトル・調理器具・洗濯機などがあります。トイレットペーパーも込みです。身の回りの物を持ってくれば暮らし始められます。</p></details>
-    <details><summary><span>ゲームが上手くなくても大丈夫？</span></summary><p>大丈夫です。ゲームの上手い下手やジャンルは問いません。</p></details>
-    <details><summary><span>引っ越しを手伝ってもらえますか？</span></summary><p>場所によっては、運営者が車で引っ越しを手伝えることがあります。問い合わせのときに相談してください。</p></details>
+    <details><summary><span>家具や家電はありますか？</span></summary><p>部屋にベッド（マットレス付き）・エアコン・机・椅子があります。共用部には冷蔵庫・電子レンジ・炊飯器・ケトル・調理器具・洗濯機があり、トイレットペーパーとWi-Fiも込みです。</p></details>
     <details><summary><span>友達を泊めてもいいですか？</span></summary><p>泊める前に運営者へ連絡してください。</p></details>
   </div>
 </section>
 
 <section id="contact">
-  <div class="wrap">
+  <div class="wrap narrow">
     <div class="sec-head"><h2>お問い合わせ</h2><span class="en">CONTACT</span></div>
-    <div class="narrow">
-      <p>空き状況・見学・入居の時期の相談は、次のどれかからメッセージを送ってください。運営者（合同会社アルシェ）が返信します。</p>
-      <div class="contact-grid">
-        <a class="contact-card" href="https://x.com/GS_Mikuni" target="_blank" rel="noopener"><b>X（旧Twitter）でメッセージ</b><span>@GS_Mikuni</span></a>
-        <a class="contact-card" href="https://www.instagram.com/gs_mikuni/" target="_blank" rel="noopener"><b>Instagramでメッセージ</b><span>@gs_mikuni</span></a>
-        <a class="contact-card" href="https://kansai.hituji.jp/comret/info/osaka/osaka/arshe-mikuni" target="_blank" rel="noopener"><b>ひつじ不動産から問い合わせ</b><span>掲載名「ARSHE 三国」のページにある問い合わせフォーム</span></a>
-        <a class="contact-card" href="https://jmty.jp/osaka/est-sha/article-rxr8x" target="_blank" rel="noopener"><b>ジモティーから問い合わせ</b><span>募集ページからメッセージ（ジモティーへのログインが必要）</span></a>
+    <p class="center">空き状況や入居の時期の相談は、下のフォームから送ってください。メールで返信します。</p>
+    <form class="form card" id="contact-form" novalidate>
+      <div class="field"><label for="f-name">お名前<em>必須</em></label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="f-email">メールアドレス<em>必須</em></label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="f-age">年齢</label><input id="f-age" name="age" type="number" inputmode="numeric" min="15" max="99"></div>
+      <div class="field"><label for="f-gender">性別</label><select id="f-gender" name="gender"><option value="">選んでください</option><option>女性</option><option>男性</option><option>その他</option><option>答えない</option></select></div>
+      <div class="field"><label for="f-nationality">国籍</label><input id="f-nationality" name="nationality" type="text"></div>
+      <div class="field"><label for="f-move-in">入居したい日</label><input id="f-move-in" name="move_in" type="date"></div>
+      <div class="field"><label for="f-stay">住みたい期間</label><input id="f-stay" name="stay" type="text" placeholder="例：1年以上"></div>
+      <div class="field"><label for="f-other">電話番号・LINEなど</label><input id="f-other" name="contact_other" type="text"></div>
+      <div class="field full"><label for="f-message">メッセージ（自己紹介・聞きたいこと）</label><textarea id="f-message" name="message"></textarea></div>
+      <div class="form-foot full">
+        <button class="btn btn-primary" type="submit" id="f-submit">送信する</button>
+        <p class="form-msg" id="f-msg" role="status" aria-live="polite"></p>
+        <p class="muted" style="margin:6px 0 0">送っていただいた内容は、このお問い合わせへの返信にだけ使います。</p>
       </div>
-      <div class="card">
-        <h3>メッセージのひな形</h3>
-        <p class="muted">下の内容を書いて送ってもらえると、返信が早くなります。「コピーする」を押して、メッセージに貼り付けてください。</p>
-        <label for="tpl" class="muted" style="display:none">メッセージのひな形</label>
-        <textarea id="tpl" class="template">【ゲーミングシェアハウス大阪三国への問い合わせ】
-お名前：
-年齢：
-性別：
-国籍：
-入居したい日：
-住みたい期間：
-見学したい日時（希望する場合）：
-ひとこと（自己紹介）：</textarea>
-        <div class="copy-row"><button class="btn btn-primary" type="button" id="copy-btn">コピーする</button><span class="copy-msg" id="copy-msg" aria-live="polite"></span></div>
-      </div>
-    </div>
+    </form>
+    <p class="muted center" style="margin-top:16px">X（<a href="https://x.com/GS_Mikuni" target="_blank" rel="noopener">@GS_Mikuni</a>）・Instagram（<a href="https://www.instagram.com/gs_mikuni/" target="_blank" rel="noopener">@gs_mikuni</a>）のメッセージでも受け付けています。</p>
   </div>
 </section>
 
@@ -469,15 +344,10 @@ footer p{margin:0 0 6px}
     <div class="access-grid">
       <div>
         <p>大阪市淀川区西三国3丁目</p>
-        <div class="station"><span>阪急宝塚本線「三国」駅</span><b>4<small>分</small></b></div>
-        <div class="station"><span>大阪メトロ御堂筋線「東三国」駅</span><b>18<small>分</small></b></div>
-        <div class="station"><span>JR・新幹線「新大阪」駅</span><b>27<small>分</small></b></div>
-        <p class="muted" style="margin-top:8px">分数は家から歩いたときの時間です。三国駅から梅田駅までは電車で8分です。</p>
+        <p class="station">阪急宝塚本線「三国」駅から徒歩 <b>2</b>分</p>
+        <p class="muted" style="margin:0">地図は阪急三国駅です。詳しい場所は問い合わせのあとにお伝えします。</p>
       </div>
-      <div>
-        <iframe class="map" title="阪急三国駅周辺の地図" src="https://maps.google.com/maps?q=%E9%98%AA%E6%80%A5%E4%B8%89%E5%9B%BD%E9%A7%85&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p class="muted" style="margin-top:8px">地図は阪急三国駅です。詳しい場所は問い合わせのあとにお伝えします。</p>
-      </div>
+      <iframe class="map" title="阪急三国駅周辺の地図" src="https://maps.google.com/maps?q=%E9%98%AA%E6%80%A5%E4%B8%89%E5%9B%BD%E9%A7%85&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>
@@ -487,8 +357,7 @@ footer p{margin:0 0 6px}
 <footer>
   <div class="wrap">
     <p><b style="color:#fff">ゲーミングシェアハウス大阪三国</b>　大阪市淀川区西三国3丁目</p>
-    <p>運営：合同会社アルシェ（大阪市浪速区）</p>
-    <p>掲載内容は2026年9月時点のものです。写真は2020年に運営者が撮影しました。</p>
+    <p>掲載内容は2026年9月時点のものです。写真には2020年に撮影したものを含み、家具の配置は現在と異なる場合があります。</p>
   </div>
 </footer>
 
@@ -497,15 +366,37 @@ footer p{margin:0 0 6px}
   var btn=document.querySelector('.menu-btn'), nav=document.getElementById('site-nav');
   btn.addEventListener('click',function(){var open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});
   nav.addEventListener('click',function(e){if(e.target.closest('a')){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-  var copyBtn=document.getElementById('copy-btn'), tpl=document.getElementById('tpl'), msg=document.getElementById('copy-msg');
-  var show=function(t){msg.textContent=t;};
-  copyBtn.addEventListener('click',function(){
-    tpl.focus();tpl.select();tpl.setSelectionRange(0,tpl.value.length);
-    var ok=false;try{ok=document.execCommand('copy');}catch(e){ok=false;}
-    if(ok){show('コピーしました');return;}
-    if(navigator.clipboard&&window.isSecureContext){
-      navigator.clipboard.writeText(tpl.value).then(function(){show('コピーしました');},function(){show('文章を選んだ状態にしました。長押し（右クリック）でコピーしてください');});
-    }else{show('文章を選んだ状態にしました。長押し（右クリック）でコピーしてください');}
+
+  // トップの写真を5秒ごとに切り替える（動きを減らす設定の人には自動で切り替えない）
+  var slides=document.querySelectorAll('.slide'), dots=document.querySelector('.dots'), cur=0, timer=null;
+  var show=function(i){
+    slides[cur].classList.remove('is-active');dots.children[cur].removeAttribute('aria-current');
+    cur=(i+slides.length)%slides.length;
+    slides[cur].classList.add('is-active');dots.children[cur].setAttribute('aria-current','true');
+  };
+  var auto=!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var start=function(){if(auto){clearInterval(timer);timer=setInterval(function(){show(cur+1);},5000);}};
+  slides.forEach(function(s,i){
+    var d=document.createElement('button');d.type='button';d.setAttribute('aria-label',(i+1)+'枚目の写真');
+    if(i===0)d.setAttribute('aria-current','true');
+    d.addEventListener('click',function(){show(i);start();});
+    dots.appendChild(d);
+  });
+  start();
+
+  // 問い合わせフォーム（空き家のミカタと同じ受け口。新着はメールで届く）
+  var ENDPOINT='https://line.arshe1719.workers.dev/api/forms/7fca5093-faad-43e5-bc72-a573982485a9/submit';
+  var form=document.getElementById('contact-form'), submit=document.getElementById('f-submit'), msg=document.getElementById('f-msg');
+  var say=function(t,ok){msg.textContent=t;msg.className='form-msg '+(ok?'ok':'ng');};
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){say('お名前と、正しい形のメールアドレスを入れてください。',false);form.reportValidity();return;}
+    var data={};new FormData(form).forEach(function(v,k){v=String(v).trim();if(v)data[k]=v;});
+    submit.disabled=true;submit.textContent='送信中…';say('',true);
+    fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({data:data})})
+      .then(function(r){return r.json().then(function(j){if(!r.ok||j.success!==true)throw new Error('ng');});})
+      .then(function(){form.reset();submit.textContent='送信しました';say('送信しました。メールで返信します。',true);})
+      .catch(function(){submit.disabled=false;submit.textContent='送信する';say('送信できませんでした。時間をおいてもう一度送るか、XかInstagramのメッセージで連絡してください。',false);});
   });
 })();
 </script>
